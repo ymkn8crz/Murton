@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  webapp:
+    build: ./app
+    ports:
+      - 13000:3000
+    volumes:
+      - ./app/webapp:/app
+    tty: true
